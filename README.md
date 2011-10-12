@@ -25,6 +25,12 @@ compresses and restore your tiddlywiki backups using diffs.
         -f DIFFDIR, --diffdir=DIFFDIR
                             path to backup diff destination folder
 
+
+## configuration
+
+If you're lazy like me, you'll want to hard-code your defaults for `TIDDLYNAME`, `BACKUPDIR`, and `DIFFDIR` in the first bit of the script, inside the box labeled "DEFAULT CONFIG". 
+
+
 ## license
 
     /*
@@ -40,6 +46,8 @@ compresses and restore your tiddlywiki backups using diffs.
 ## system requirements
 
  * `diff -u ...` and `patch -u ...` commands must be available on your system.
+
+Tested on debian sid/wheezy with python 2.6.7 and tiddlywiki 2.6.5
 
 ## assumptions
 
