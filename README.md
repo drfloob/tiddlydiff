@@ -1,4 +1,8 @@
-compresses and restore your tiddlywiki backups using diffs.
+`tiddlydiff.py` compresses and restores your tiddlywiki backups using diffs.
+
+I started a wiki one night on a whim, and turned on auto-save. After an hour of typing, the size of my backup folder was about 15M. That rate of growth would not be sustainable for long on this tiny laptop drive. So I whipped up `tiddlydiff` and shrank the total size of my backups to ~500K. That's a bit more sustainable, I think. I can live with that, as long as this script doesn't bork my backups!
+
+Fwiw, this script may bork your backups.
 
 ## usage
 
