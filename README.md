@@ -8,22 +8,22 @@ compresses and restore your tiddlywiki backups using diffs.
       -h, --help            show this help message and exit
 
       Commands:
-	-b, --backup        convert your backups to diffs
-	-r RESTOREFILE, --restore=RESTOREFILE
-			    restore a version of your wiki from backup diffs;
-			    takes the name (with optional path) of the diff to be
-			    restored; creates a new html file in your backup diffs
-			    folder.
+        -b, --backup        convert your backups to diffs
+        -r RESTOREFILE, --restore=RESTOREFILE
+                            restore a version of your wiki from backup diffs;
+                            takes the name (with optional path) of the diff to be
+                            restored; creates a new html file in your backup diffs
+                            folder.
     
       Config:
-	folder and various config options
+        folder and various config options
 
-	-n TIDDLYNAME, --name=TIDDLYNAME
-			    name of the wiki file (e.g. 'wiki' for wiki.html)
-	-k BACKUPDIR, --bkdir=BACKUPDIR
-			    path to normal tiddlywiki backup folder
-	-f DIFFDIR, --diffdir=DIFFDIR
-			    path to backup diff destination folder
+        -n TIDDLYNAME, --name=TIDDLYNAME
+                            name of the wiki file (e.g. 'wiki' for wiki.html)
+        -k BACKUPDIR, --bkdir=BACKUPDIR
+                            path to normal tiddlywiki backup folder
+        -f DIFFDIR, --diffdir=DIFFDIR
+                            path to backup diff destination folder
 
 ## license
 
