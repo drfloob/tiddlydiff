@@ -1,6 +1,6 @@
-Compresses your tiddlywiki backups using diffs.
+compresses and restore your tiddlywiki backups using diffs.
 
-## License
+## license
 
     /*
      * ----------------------------------------------------------------------------
@@ -12,17 +12,12 @@ Compresses your tiddlywiki backups using diffs.
     */
 
 
-## REQUIREMENTS:
+## system requirements
 
- * only works on *nix-compatible operating systems right now. Reuqires that you have
-     `diff -u ...` and `cp` commands available to create diffs, and `patch -u ...` 
-     to get back your original files.
+ * `diff -u ...` and `patch -u ...` commands must be available on your system.
 
-## ASSUMPTIONS:
+## assumptions
 
- * tiddlywiki backups are stored in their own folder, which contains nothing but
-      tiddlywiki backups.
- * tiddlywiki backud diffs will be stored in their own folder, which contains 
-      nothing but tiddlywiki backup diffs.
-
+ * tiddlywiki backups live in their own folder with nothing else.
+ * tiddlywiki backup diffs live in their own separate folder as well, without anything else.
 

@@ -87,7 +87,7 @@ def make_backup():
             exit(1)
 
         # all is well, perform the diff
-        system("diff -u " + fn1 + " " + fn2 + " > " + outfile)
+        system(" ".join(["diff -u", fn1, fn2, ">", outfile]))
         
     # @TODO: smarter filtering: just diff the files that haven't been diffed yet, based on the diff base file
 
@@ -111,7 +111,7 @@ def make_backup():
 
 
     ### Copy the most recent backup file, on which the diff chain is based
-    system("cp " + join(bd, max(backup_files)) + " " + dd)
+    shutil.copy(join(bd, max(backup_files)), dd)
 
     ### Remove all other diff base files
     print "Cleaning up old base files"
@@ -151,7 +151,6 @@ def restore_file():
     keepdiffs = filter(lambda x: x > rfd and x.endswith(".diff"), diffs)
 
     # apply in order, newest to oldest
-    print "len", len(keepdiffs)
     for i in xrange(len(keepdiffs)-1,-1,-1):
         ppf = join(dd, keepdiffs[i])
         system(" ".join(["patch", "-u", prf, ppf]))
