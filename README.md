@@ -6,6 +6,8 @@ Fwiw, this script may bork your backups.
 
 ## usage
 
+   Note that this script *does not* remove your backups, but it *does* require you (re)move them yourself. `tiddlydiff` will fail if any backups it's already processed in a previous run are still in the backups folder on the next run. Leftover backup-file tolerance is on the todo list.
+
     Usage: tiddlydiff.py command [config] [options]
     
     Options:
